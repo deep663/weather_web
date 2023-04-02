@@ -1,5 +1,5 @@
 const weather = {
-    API: "e2ba981bb15ab33bc9fc40a1fdd354c1",
+    API: "Your API key",
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + this.API + "&units=metric").then((response) => response.json()).then((data) => this.displayWeather(data));
     },
